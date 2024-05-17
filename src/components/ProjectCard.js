@@ -2,7 +2,7 @@ import {React, useRef} from "react";
 import { Col } from "react-bootstrap";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export const ProjectCard = ({ title, description, imgUrl, source }) => {
+export const ProjectCard = ({ title, description, imgUrl, source, live }) => {
 
   const ref = useRef()
 
@@ -27,6 +27,7 @@ export const ProjectCard = ({ title, description, imgUrl, source }) => {
       </motion.div>
       <motion.div className="text-center mt-3" style={{ y }}>
   <button onClick={() => window.location.href = source}><span>Source Code</span></button>
+  <button onClick={() => window.location.href = live}><span>Live</span></button>
 </motion.div>
     </Col>
   );
