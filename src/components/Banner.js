@@ -9,7 +9,7 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
 const [loopNum, setLoopNum] = useState(0);
 const [isDeleting, setIsDeleting] = useState(false);
-const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+const toRotate = ["Web Developer", "Web Designer", "UI/UX Developer"];
 const [text, setText] = useState('');
 const [delta, setDelta] = useState(100);
 const period = 2000;
@@ -63,7 +63,7 @@ const tick = () => {
             {({ isVisible }) => (
               <div id="ban" className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1>{`Hi, I'm Fardeen `}</h1>
-                 <h2 className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><h2>{text}</h2></h2>
+                 <h2 className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Developer" ]'><h2>{text}</h2></h2>
                 <div className="d-block d-md-none">
                   <img src={headerImg} alt="Header Img" />
                 </div>
