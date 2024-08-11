@@ -58,7 +58,13 @@ export const Skills = () => {
                         </div>
                         <div className="skill-bx">
                             <h3>Frontend</h3>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <Carousel
+                                responsive={responsive}
+                                infinite={true}
+                                autoPlay={true}
+                                autoPlaySpeed={1500}  
+                                className="skill-slider"
+                            >
                                <div className="item">
                                     <img src={react} alt="React.js" />
                                     <h5>React.js</h5>
@@ -93,7 +99,13 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h3>Backend</h3>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <Carousel
+                                responsive={responsive}
+                                infinite={true}
+                                autoPlay={true}
+                                autoPlaySpeed={2000} 
+                                className="skill-slider"
+                            >
                                  <div className="item">
                                     <img src={nodejs} alt="nodejs" />
                                     <h5>Node.js</h5>
@@ -120,7 +132,13 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h3> Other</h3>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <Carousel
+                                responsive={responsive}
+                                infinite={true}
+                                autoPlay={true}
+                                autoPlaySpeed={2500} 
+                                className="skill-slider"
+                            >
                                  <div className="item">
                                     <img src={git} alt="git" />
                                     <h5>Git</h5>
